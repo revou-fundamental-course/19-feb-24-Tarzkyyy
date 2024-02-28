@@ -181,3 +181,7 @@ footer > p {
     text-align: end;
     background-color: skyblue; 
 }
+
+@media only screen and (max-width: 480px) {
+    
+}
