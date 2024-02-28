@@ -83,8 +83,7 @@ header{
     flex-direction: column; 
     display: flex;
     width: 1366;
-    height: 578px;
-    background-color: skyblue;          
+    height: 578px;        
 }
 .content1 > div1 {
     display: flex; 
@@ -94,7 +93,6 @@ header{
     justify-content: center;
     font-size: 10pt;
     text-align: center;
-    background-color: skyblue; 
 }
 
 .content1 > div2 {
@@ -105,7 +103,6 @@ header{
     align-items: left; 
     font-size: 10pt;
     text-align: left;
-    background-color: skyblue; 
 }
 .content1 > div2 table {
     padding-left: 80px;
