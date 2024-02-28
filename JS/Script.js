@@ -1,25 +1,23 @@
-const nama = "Sepatu Vans";
-let Warna = Greenies;
-
-let Jenis = document.getElementById('Jenis');
-console.log('Jenis');
-
-function generateJenis() {
-    let Jenis;
-
-    if(Nama "Greenies") {
-     Jenis = "Greenies";
-
-    } else if (Nama "Skyies") {
-     Jenis = "Skyies";
+function validateForm() {
+    let name = document.forms["message-form"]["full-name"].value;
+    let birthDate = document.forms["message-form"]["birth-date"].value;
+    let gender = document.forms["message-form"]["gender"].value;
+    let messages = document.forms["message-form"]["messages"].value;
+  
+    if (name == "" || birthDate == "" || gender == "" || messages == "") {
+      alert("Field cannot be empty, please fill the empty field.");
+      return false;
+  
     }
-    else if(Nama "Pinkies"){
-     Jenis ="Pinkies";
-
-   return Jenis.innerHTML = generasi;
-}
-
-console.log(nama);
-console.log(Warna);
-
-generateJenis()
+  
+    setSenderUI(name, birthDate, gender, messages);
+  
+  
+  }
+  
+  function setSenderUI(name, birthDate, gender, messages) {
+    document.getElementById("sender-full-name").innerText = name;
+    document.getElementById("sender-birth-date").innerText = birthDate;
+    document.getElementById("sender-gender").innerText = gender;
+    document.getElementById("sender-messages").innerText = messages;
+  }
